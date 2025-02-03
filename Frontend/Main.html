@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="line1">
+        <div class="introtext">
+          <h4>Panel-Query Registration</h4>
+        </div>
+        <div class="button2">
+          <button id="logoutButton">Logout</button>
+        </div>
+      </div>
+    </nav>
+    <nav>
+      <div class="line2">
+        <div class="button1">
+          <a href="addquery.html"><button>Add New Query</button></a>
+        </div>
+        <div class="button2">
+          <button>
+            <img
+              src="images/notification-logo.png"
+              height="15"
+              width="15"
+              alt="Notification"
+            />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="container1">
+      <div class="box">
+        <h2>Profile Information</h2>
+        <ul>
+          <li><strong>Name:</strong> <span id="userName"></span></li>
+          <li><strong>Email:</strong> <span id="userEmail"></span></li>
+          <li>
+            <strong>Department:</strong> <span>Creative Technologies</span>
+          </li>
+          <li><strong>User Type:</strong> <span id="userType"></span></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Queries Information</h2>
+        <ul>
+          <li>
+            <strong>Pending:</strong>
+            <span class="js-pending-number">0</span>
+          </li>
+          <li>
+            <strong>Processing:</strong>
+            <span class="js-processing-number">0</span>
+          </li>
+          <li>
+            <strong>Completed:</strong>
+            <span class="js-completed-number">0</span>
+          </li>
+          <li>
+            <strong>Total:</strong>
+            <span class="js-total-number">0</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab">
+      <div class="head1">
+        <h4>Pending Queries</h4>
+      </div>
+      <input type="text" placeholder="Enter Ticket Number" />
+      <table id="pendingTable">
+        <thead>
+          <tr>
+            <th>Query Id</th>
+            <th>Department</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Contact No.</th>
+            <th>Priority</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="tab">
+      <div class="head1">
+        <h4>Processing Queries</h4>
+      </div>
+      <input type="text" placeholder="Enter Ticket Number" />
+      <table id="processingTable">
+        <thead>
+          <tr>
+            <th>Query Id</th>
+            <th>Department</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Contact No.</th>
+            <th>Priority</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="tab">
+      <div class="head1">
+        <h4>Completed Queries</h4>
+      </div>
+      <input type="text" placeholder="Enter Ticket Number" />
+      <table id="completedTable">
+        <thead>
+          <tr>
+            <th>Query Id</th>
+            <th>Department</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Contact No.</th>
+            <th>Priority</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

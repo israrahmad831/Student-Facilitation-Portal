@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Signup Page</title>
+    <link rel="stylesheet" href="styles/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="form-title">Login</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Login" />
+        </div>
+      </form>
+      <form id="signup-form" style="display: none">
+        <div class="form-group">
+          <label for="new_username">Username:</label>
+          <input type="text" id="new_username" name="new_username" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="user_type">User Type:</label>
+          <select id="user_type" name="user_type" required>
+            <option value="">Select User Type</option>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Admin">Admin</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="new_password">Password:</label>
+          <input
+            type="password"
+            id="new_password"
+            name="new_password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Sign Up" />
+        </div>
+      </form>
+
+      <div class="toggle-form">
+        <a href="#" id="toggle-link">Don't have an account? Sign Up</a>
+      </div>
+    </div>
+    <script src="scripts/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Query Form</title>
+    <link rel="stylesheet" href="styles/addquery.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="queryForm">
+        <h2>Department</h2>
+        <select id="department" name="department">
+          <option>-- Select Department --</option>
+          <option value="CS">CS</option>
+          <option value="SE">SE</option>
+          <option value="Maths">Maths</option>
+        </select>
+        <h2>Query Description</h2>
+        <textarea
+          id="description"
+          name="description"
+          placeholder="Enter Query Description"
+        ></textarea>
+        <h2>Query Type</h2>
+        <select id="queryType" name="queryType">
+          <option>-- Select Query Type --</option>
+          <option value="academics">Academics</option>
+          <option value="admissions">Admissions</option>
+          <option value="financial_aid">Financial Aid</option>
+          <option value="housing">Housing</option>
+          <option value="student_services">Student Services</option>
+          <option value="other">Other</option>
+        </select>
+        <h2>Contact No / Ext.</h2>
+        <input
+          type="text"
+          id="contactNo"
+          name="contactNo"
+          placeholder="Enter Contact No or Ext."
+        />
+        <div class="radio-group">
+          <input type="radio" id="normal" name="priority" value="normal" />
+          <label for="normal">Normal</label>
+          <input type="radio" id="urgent" name="priority" value="urgent" />
+          <label for="urgent">Urgent</label>
+        </div>
+        <button type="submit">Submit</button>
+        <a href="Main.html"><button type="button">Back to List</button></a>
+        <a href="login.html"><button type="button">Logout</button></a>
+      </form>
+    </div>
+    <script src="scripts/addquery.js"></script>
+  </body>
+</html>
